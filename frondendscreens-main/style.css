@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 500px;
+    background: url(backgroundImageforsignpage.jpg);
+    background-size: cover;
+    /* align-items: stretch;
+    padding: 500px;
+    margin: 0px; */
+}
+label{
+    width:100px;
+    display:inline-block;
+    color:black;
+    margin:4px;
+}
+
+#myforms{
+    
+    border-radius: 10px;
+    background: #21d2df;
+    text-emphasis-color: white;
+    width:400px;
+    padding:20px;
+    position:absolute;
+    top:50%;;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+
+}
+
+h1{
+    text-align:center;
+
+    
+}
+#submit{
+    background-color: rgb(67, 67, 160);
+    color:white;
+    width:100px;
+    margin-left: 190px;
+    
+}

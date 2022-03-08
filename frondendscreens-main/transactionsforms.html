@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction page</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 500px;
+            background: url(backgroundimagefortransactions.jpg);
+            background-size: cover;
+            
+        }
+        label{
+            width:100px;
+            display:inline-block;
+            color:black;
+            margin:4px;
+        }
+
+        #myforms{
+            
+            border-radius: 10px;
+            background: #21d2df;
+            text-emphasis-color: white;
+            width:400px;
+            padding:20px;
+            position:absolute;
+            top:50%;;
+            left:50%;
+            transform: translate(-50%, -50%);
+            font-size: medium;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            
+
+        }
+
+        h1{
+            text-align:center;
+
+            
+        }
+        #submit{
+            background-color: rgb(67, 67, 160);
+            color:white;
+            width:100px;
+            margin-left: 190px;
+            
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+    
+    <div>
+        <form id="myforms" action="transactions.php" method="POST">
+            
+            <div >
+                <a style="color:white" href="./main.html" >Go to Main Window</a>   
+            </div>
+
+
+            <h1>Send Amount </h1>
+            <div class=" form-group">
+                <label>Customer_Id</label>
+                <input type="number" name="from_customer_Id" placeholder=" Enter from_customer_Id">
+            </div><br>
+
+            <div>
+                <label >Date</label>
+                <input type="date" name = "trans_date" placeholder="Enter date">
+            </div><br>
+
+            <div>
+                <label >Amount to Send</label>
+                <input type="number" name = "trans_amount  " placeholder="Enter the amount to send">
+
+            </div><br>
+            <div class=" form-group">
+                <label>Receiver's Customer_Id</label>
+                <input type="number" name="to _customer_Id" placeholder=" Enter to_customer_Id">
+
+            </div><br>
+            <div>
+                <input type="submit" name="send" id="submit" value="Send">
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

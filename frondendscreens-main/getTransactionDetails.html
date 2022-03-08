@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Details Page</title>
+
+    <style>
+
+body{
+            margin: 0;
+            padding: 500px;
+            background: url(backgroundImagefortransactiondetails.jfif);
+            background-size: cover;
+            
+        }
+        label{
+            width:100px;
+            display:inline-block;
+            color:black;
+            margin:4px;
+        }
+
+        #myforms{
+            
+            margin-top: 100px;
+            border-radius: 10px;
+            background: #21d2df;
+            text-emphasis-color: white;
+            width:600px;
+            padding:20px;
+            position:absolute;
+            top:50%;;
+            left:50%;
+            transform: translate(-50%, -50%);
+            font-size: medium;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            
+
+        }
+
+        h1{
+            text-align:center;
+
+            
+        }
+        #submit{
+            background-color: rgb(67, 67, 160);
+            color:white;
+            width:300px;
+            margin-left: 80px;
+            
+        } 
+    </style>
+</head>
+<body>
+    <div style="columns: 6;">
+        <div><form id="myforms" action="transactiondetails" method="get">
+            <div>
+                <a  style="color:white" href="./main.html " >Go to Main Window</a>   
+            </div>
+            
+            <h1 style="color: black;">Get Transaction Details By Id</h1>
+            <div> 
+                <label >Transaction_Id</label>
+                    <input type="number" name ="getbyId" placeholder="Enter TransactionID">
+            </div> <br>
+            
+            <div>
+                <input type="submit" name="submit" value="Submit to get Transaction Detail" id="submit">
+            </div><br>
+
+            <br>
+            <h1 style="color: black;">Get All Customer Details </h1> 
+            <div>
+                 <input type="submit" name="submit" value="Click here to get all tranaction Details" id="submit">
+             </div><br>
+            
+        </div>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
