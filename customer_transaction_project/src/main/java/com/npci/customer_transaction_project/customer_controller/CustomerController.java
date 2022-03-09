@@ -65,6 +65,7 @@ public class CustomerController {
 		}
 		return new ResponseEntity<Customers>(customers, HttpStatus.OK);
 	}
+	
 
 	// delete the customer by Id
 	@DeleteMapping("/deletecustomerbyId/{id}")
