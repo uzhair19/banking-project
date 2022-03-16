@@ -12,5 +12,7 @@ public interface TransactionService {
 	public List<Transaction> getAllTransactionDetails();
 
 	public Transaction addTransaction(Transaction transaction) throws Exception;
+	
+	
 
 }
